@@ -3,55 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agrinho 2025 - Bem-Estar Animal</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Agrinho - Festejando o Campo e a Cidade</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <h1>Bem-Estar Animal e Agricultura Sustentável</h1>
-    <p>Projeto Agrinho 2025 - Por Gabrieli Vitória Dubay Machado</p>
-  </header>
+<body class="festa-junina">
 
-  <nav>
-    <ul>
-      <li><a href="#intro">Introdução</a></li>
-      <li><a href="#bem-estar">Bem-Estar Animal</a></li>
-      <li><a href="#sustentabilidade">Práticas Sustentáveis</a></li>
-      <li><a href="#conclusao">Conclusão</a></li>
-    </ul>
-  </nav>
+<header class="fade-in">
+  <h1>🎉 Agrinho 2025</h1>
+  <p>Festejando o Campo e a Cidade 🌾🏙️</p>
+  <button onclick="scrollToSection('quiz')">Fazer Quiz</button>
+  <button onclick="scrollToSection('galeria')">Ver Galeria</button>
+  <button onclick="scrollToSection('certificado')">Certificado</button>
+</header>
 
-  <main>
-    <section id="intro">
-      <h2>Introdução</h2>
-      <p>A agricultura moderna exige equilíbrio entre produção, meio ambiente e saúde animal. Este projeto aborda como o bem-estar animal se relaciona diretamente com uma produção agrícola mais ética e sustentável.</p>
-    </section>
+<section id="video" class="fade-in">
+  <h2>🎬 Vídeo Especial</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PXoXaDt1VCI" 
+          title="Vídeo Agrinho" frameborder="0" allowfullscreen></iframe>
+</section>
 
-    <section id="bem-estar">
-      <h2>Importância do Bem-Estar Animal</h2>
-      <p>Animais sadios e bem tratados produzem melhor e vivem mais. Práticas como alojamento adequado, alimentação balanceada e cuidados veterinários são fundamentais.</p>
-    </section>
+<section id="quiz" class="fade-in">
+  <h2>🎯 Quiz - Campo e Cidade</h2>
+  <div id="quiz-container">
+    <p id="pergunta"></p>
+    <div id="opcoes"></div>
+    <button onclick="proximaPergunta()">Próxima</button>
+    <p id="resultado"></p>
+  </div>
+</section>
 
-    <section id="sustentabilidade">
-      <h2>Práticas Sustentáveis na Agropecuária</h2>
-      <ul>
-        <li>Uso consciente da água</li>
-        <li>Rotação de pastagens</li>
-        <li>Evitar o uso excessivo de antibióticos</li>
-        <li>Adoção de tecnologias limpas</li>
-      </ul>
-    </section>
+<section id="galeria" class="fade-in">
+  <h2>📷 Galeria de Fotos</h2>
+  <div class="galeria-container">
+    <img src="https://cdn.pixabay.com/photo/2017/08/30/07/52/tractor-2695419_1280.jpg" alt="Trator">
+    <img src="https://cdn.pixabay.com/photo/2016/11/18/14/25/farm-1835619_1280.jpg" alt="Colheita">
+    <img src="https://cdn.pixabay.com/photo/2015/03/26/09/39/city-690332_1280.jpg" alt="Cidade">
+  </div>
+</section>
 
-    <section id="conclusao">
-      <h2>Conclusão</h2>
-      <p>O futuro da agricultura está diretamente ligado à preservação dos recursos naturais e ao respeito aos animais. O cuidado com os animais é também um cuidado com a sociedade.</p>
-    </section>
-  </main>
+<section id="certificado" class="fade-in">
+  <h2>📜 Certificado de Participação</h2>
+  <p>Digite seu nome para gerar um certificado personalizado:</p>
+  <input type="text" id="nome" placeholder="Seu nome" />
+  <button onclick="gerarCertificado()">Gerar Certificado</button>
+  <div id="certificado-preview"></div>
+</section>
 
-  <footer>
-    <p>© 2025 - Projeto Agrinho por Gabrieli Vitória Dubay Machado</p>
-  </footer>
+<footer>
+  🌟 Unidos pelo futuro: Campo e Cidade em festa! 🌟
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
